@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "834bd7e9-0b52-4f44-863d-2d680e97ccaa",
+		"name": "immence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4801312"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"assd@gmail.com\",\n    \"username\":\"johnd\",\n    \"password\":\"m38rmF$\",\n    \"name\":{\n        \"firstName\":\"John\",\n        \"lastName\":\"Doe\"\n    },\n    \"address\":{\n        \"city\":\"kilcoole\",\n        \"street\":\"7835 new road\",\n        \"number\":\"3\",\n        \"zipCode\":\"12926-3874\",\n        \"geolocation\":{\n            \"lat\":\"-37.3159\",\n            \"long\":\"81.1496\"\n        }\n    },\n    \"phone\":\"1-570-236-7033\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62ebd190dcc173784d3edf4a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"jay@gmail.com\",\n    \"username\":\"johnd\",\n    \"password\":\"m38rmF$\",\n    \"name\":{\n        \"firstName\":\"John\",\n        \"lastName\":\"Doe\"\n    },\n    \"address\":{\n        \"city\":\"kilcoole\",\n        \"street\":\"7835 new road\",\n        \"number\":\"3\",\n        \"zipCode\":\"12926-3874\",\n        \"geolocation\":{\n            \"lat\":\"-37.3159\",\n            \"long\":\"81.1496\"\n        }\n    },\n    \"phone\":\"1-570-236-7033\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62ebd190dcc173784d3edf4a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62ebd190dcc173784d3edf4a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
